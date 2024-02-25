@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+body {
+    background-color: azure;
+}
+
+.navbar-bg {
+    background-color:aliceblue;
+}
+
+.title {
+    font-family: "Exo 2", sans-serif !important;
+    letter-spacing: 3vh;
+    font-size: xx-large;
+}
+
+.bottom-img {
+    margin: 0;
+    padding: 0;
+}
+
+.img-extention {
+    background: rgb(37, 163, 119);
+}
+
+* {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

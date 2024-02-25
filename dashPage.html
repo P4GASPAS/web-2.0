@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css_js/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css_js/dashPage.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="nav-bg container-fluid shadow-sm sticky-top px-0">
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler me-auto ms-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="" class="navbar-brand mx-auto mx-lg-0">
+                    <img src="./images/clinicLogo.svg" alt="Logo" height="48">
+                </a>
+                <ul class="navbar-nav ms-auto me-2 list-group-horizontal">
+                    <li class="nav-item mx-1">
+                        <img src="./images/user.svg" alt="user" class="img-fluid">
+                    </li>
+                    <li class="nav-item mx-1">
+                        <img src="./images/Message_light.svg" alt="notif" class="img-fluid">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- sidenav offcanvas -->
+    <div class="container-fluid m-0 p-0">
+        <div class="row px-0 mx-0">
+            <div class="col-lg-2 px-0 d-flex flex-column">
+                <div class="navbar navbar-expand-lg py-0 h-100">
+                    <div class="sidenav offcanvas offcanvas-start rounded align-self-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar">
+                        <div class="offcanvas-header">
+                            <img src="./images/clinicLogo.svg" alt="Logo" height="48">
+                        </div>
+                        <hr class="d-lg-none">
+                        <div class="offcanvas-body justify-content-center mt-lg-5">
+                            <ul class="navbar-nav flex-column w-100 mt-lg-3 mx-lg-1">
+                                <li class="nav-item mb-3">
+                                    <button class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start">
+                                        <img src="./images/home.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Home</p>
+                                    </button>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <button class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start">
+                                        <img src="./images/calendar.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Appointment</p>
+                                    </button>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <button class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start">
+                                        <img src="./images/chart.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Statistics</p>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container-fluid w-100 mx-0 px-3 px-lg-1 mb-3">
+                            <button class="btn btn-outline-danger w-100 py-2 d-flex justify-content-start">
+                                <img src="./images/out.svg" alt="icon" class="img-fluid mx-2">
+                                <p class="mb-0">Log out</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <!-- dynamic div -->
+                <section>
+                    <p class="fw-bold my-4 ms-3 h5">
+                        Home
+                    </p>
+                    <h1 class="user-name text-center my-4">
+                        Jamili, Yhestin Syth Basas
+                    </h1>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <div class="card py-3 bg-info text-light shadow-none">
+                                <p class="text-center mb-0">
+                                    For any emergency health concerns,  please visit us at Vitality clinic 
+                                    office or  contact us at +63-915-611-3460
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card py-4 text-center bg-primary text-light h5">on going</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card py-4 text-center bg-warning text-light h5">late</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card py-4 text-center bg-danger text-light h5">absent</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card py-4 text-center bg-success text-light h5">done</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card py-4 text-center text-secondary h5">Available doctor</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card py-4 text-center text-secondary h5">Available staff</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card py-4 text-center text-secondary h5">total appointments</div>
+                        </div>
+                    </div>
+                    <div class="container-fluid my-4">
+                        <h4 class="ms-3">Health tips:</h4>
+                    </div>
+                    <div class="container-fluid mb-5 text-center">
+                        To maintain good health, it's important to prioritize a few key habits. 
+                        Start by eating a balanced diet rich in fruits, vegetables, and whole grains, 
+                        and staying hydrated by drinking plenty of water throughout the day. Regular 
+                        exercise is crucial, aiming for at least 150 minutes of moderate activity each 
+                        week. Additionally, prioritize getting 7-9 hours of quality sleep each night to 
+                        allow your body to rest and recharge. Managing stress through techniques 
+                        like meditation or deep breathing can also have a positive impact on your 
+                        overall well-being. Aim to maintain a healthy weight through a combination 
+                        of healthy eating and physical activity, and limit alcohol intake while 
+                        avoiding smoking. Practice good hygiene habits, such as regular handwashing 
+                        and covering coughs, and foster positive relationships with friends and family 
+                        for added support and connection. These simple habits can go a long way in 
+                        promoting a healthy lifestyle.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="./css_js/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="./css_js/dashPage.js"></script>
+</body>
+
+</html>

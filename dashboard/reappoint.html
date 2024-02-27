@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../design/custom/dashboard.css">
 </head>
+
 <body>
-    
+
     <!-- navbar -->
     <div class="nav-bg container-fluid shadow-sm sticky-top px-0">
         <div class="container px-0">
@@ -19,7 +21,7 @@
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">
+                <a href="../index.html" class="navbar-brand mx-auto mx-lg-0">
                     <img src="../images/clinicLogo.svg" alt="Logo" height="48">
                 </a>
                 <ul class="navbar-nav ms-auto me-2 list-group-horizontal">
@@ -34,6 +36,8 @@
         </div>
     </div>
 
+
+
     <!-- sidenav offcanvas -->
     <div class="container-fluid m-0 p-0">
         <div class="row px-0 mx-0">
@@ -47,13 +51,13 @@
                         <div class="offcanvas-body justify-content-center mt-lg-5">
                             <ul class="navbar-nav flex-column w-100 mt-lg-3 mx-lg-1">
                                 <li class="nav-item mb-3">
-                                    <a href="./home.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                    <a href="./home.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start active" type="button">
                                         <img src="../images/icons/home.svg" alt="icon" class="img-fluid mx-2">
                                         <p class="mb-0">Home</p>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-3">
-                                    <a class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start active" type="button">
+                                    <a href="./appointment.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
                                         <img src="../images/icons/calendar.svg" alt="icon" class="img-fluid mx-2">
                                         <p class="mb-0">Appointment</p>
                                     </a>
@@ -102,59 +106,16 @@
             <div class="col-12 col-lg-10">
 
                 <!-- dynamic div -->
-
+                
                 <section>
-                    <div class="container">
-                        <p class="fw-bold my-4 ms-3 h5">
-                            Appointment
-                        </p>
-                        <div class="card shadow w-75 mx-auto mb-5">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-8 mx-auto my-4">
-                                        <h3 class="text-center">
-                                            Fill up
-                                        </h3>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Name</label>
-                                        <input type="name" class="form-control" required>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Date</label>
-                                        <input type="date" class="form-control" required>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Time</label>
-                                        <input type="time" class="form-control" required>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Appointment date</label>
-                                        <input type="date" class="form-control" required>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Appointment time</label>
-                                        <input type="time" class="form-control" required>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label class="form-label">Appointment Type</label>
-                                        <select class="form-select" required>
-                                            <option value="">Online</option>
-                                            <option value="Male">Walk-in</option>
-                                            <option value="Female">Emergency</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4">
-                                        <label for="exampleInputEmail1" class="form-label ms-2">Appointment Reason</label>
-                                        <textarea class="form-control" rows="2" required></textarea>
-                                    </div>
-                                    <div class="col-8 mx-auto mb-4 d-grid">
-                                        <button class="btn btn-success">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                    <p class="fw-bold my-4 ms-3 h5">
+                        Update schedule
+                    </p>
+
+                    <div class="container-fluid">
+                        
                     </div>
+
                 </section>
 
             </div>
@@ -163,7 +124,8 @@
 
     <!-- bootstrap -->
     <script src="./design/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom -->
+    <!-- custom js -->
     <script src="../design/custom/dashboard.js"></script>
 </body>
+
 </html>

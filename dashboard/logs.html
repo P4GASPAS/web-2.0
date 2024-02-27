@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../design/bootstrap/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../design/custom/appointment.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="nav-bg container-fluid shadow-sm sticky-top px-0">
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler me-auto ms-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">
+                    <img src="../images/clinicLogo.svg" alt="Logo" height="48">
+                </a>
+                <ul class="navbar-nav ms-auto me-2 list-group-horizontal">
+                    <li class="nav-item mx-1">
+                        <img src="../images/icons/user.svg" alt="user" class="img-fluid">
+                    </li>
+                    <li class="nav-item mx-1">
+                        <img src="../images/icons/message.svg" alt="notif" class="img-fluid">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- sidenav offcanvas -->
+    <div class="container-fluid m-0 p-0">
+        <div class="row px-0 mx-0">
+            <div class="col-lg-2 px-0 d-flex flex-column">
+                <div class="navbar navbar-expand-lg py-0">
+                    <div class="sidenav offcanvas offcanvas-start rounded align-self-start" style="height: 100vh;" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar">
+                        <div class="offcanvas-header">
+                            <img src="../images/clinicLogo.svg" alt="Logo" height="48">
+                        </div>
+                        <hr class="d-lg-none">
+                        <div class="offcanvas-body justify-content-center mt-lg-5">
+                            <ul class="navbar-nav flex-column w-100 mt-lg-3 mx-lg-1">
+                                <li class="nav-item mb-3">
+                                    <a href="./home.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                        <img src="../images/icons/home.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Home</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a href="./appointment.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                        <img src="../images/icons/calendar.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Appointment</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a href="./logs.html" class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start active" type="button">
+                                        <img src="../images/icons/chart.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Logs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                        <img src="./images/chart.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Feedback</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                        <img src="./images/chart.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Emergency Info</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" type="button">
+                                        <img src="./images/chart.svg" alt="icon" class="img-fluid mx-2">
+                                        <p class="mb-0">Profile</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container-fluid w-100 mx-0 px-3 px-lg-1 mb-3">
+                            <button class="btn btn-outline-danger w-100 py-2 d-flex justify-content-start">
+                                <img src="../images/icons/out.svg" alt="icon" class="img-fluid mx-2">
+                                <p class="mb-0">Log out</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+
+                <!-- dynamic div -->
+
+                <section>
+                    <p class="fw-bold my-4 ms-3 h5">
+                        Logs
+                    </p>
+                    <div role="region" aria-label="scrollable content" style="height: auto; overflow: scroll hidden;">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="border-0">control number</th>
+                                    <th class="border-0">Patient</th>
+                                    <th class="border-0">ID</th>
+                                    <th class="border-0">Reason</th>
+                                    <th class="border-0">Date</th>
+                                    <th class="border-0">Time</th>
+                                    <th class="border-0">Doctor</th>
+                                    <th class="border-0">ID</th>
+                                    <th class="border-0">Status</th>
+                                    <th class="border-0">Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>000012</td>
+                                    <td>Rose</td>
+                                    <td>678899</td>
+                                    <td>Oral</td>
+                                    <td>07/22/2025</td>
+                                    <td>09:45am</td>
+                                    <td>Johnny</td>
+                                    <td>010143</td>
+                                    <td class="bg-warning">For approval</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>000013</td>
+                                    <td>Yhestin</td>
+                                    <td>678834</td>
+                                    <td>Head ache</td>
+                                    <td>04/15/2025</td>
+                                    <td>04:45pm</td>
+                                    <td>Belo</td>
+                                    <td>010121</td>
+                                    <td class="bg-success">Approval</td>
+                                    <td>none</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="./design/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
+
+.company-name {
+    font-family: "Exo 2", sans-serif !important;
+    color: #f0f8fe;
+}
+
+.bg-navbar {
+    background-color: #e25a25;
+}
+
+body {
+    background-color: azure;
+}

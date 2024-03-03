@@ -55,7 +55,7 @@
                                         <input type="radio" class="btn-check mb-3" name="btnradio" id="btnradio1" autocomplete="off" checked>
                                         <label class="btn btn-outline-secondary w-100 py-2 d-flex justify-content-start" for="btnradio1">
                                             <img src="../images/icons/home.svg" alt="icon" class="img-fluid mx-2">
-                                            <p class="mb-0">Profile</p>
+                                            <p class="mb-0">Home</p>
                                         </label>
                                     </li>
                                     <li class="nav-item mb-3">
@@ -175,6 +175,53 @@
                             <div class="card py-4 text-center text-secondary h5 shadow-sm">total appointments</div>
                         </div>
                     </div>
+                    <div class="container-fluid">
+                        <div class="card">
+                            <div class="card-header p-2 ps-1">
+                                <h5 class="m-0 fw-bold">Manage schedule:</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-0 fw-bold">Date</th>
+                                                <th class="border-0 fw-bold">Time</th>
+                                                <th class="border-0 fw-bold">Name</th>
+                                                <th class="border-0 fw-bold">Reason</th>
+                                                <th class="border-0 fw-bold">Doctor</th>
+                                                <th class="border-0 fw-bold">Edit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <td>11/20/2024</td>
+                                                <td>10:00am</td>
+                                                <td>Rose</td>
+                                                <td>Oral</td>
+                                                <td>Johnny</td>
+                                                <td>
+                                                    <button class="btn btn-outline-success">update</button>
+                                                    <button class="btn btn-outline-danger">delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11/20/2024</td>
+                                                <td>10:00am</td>
+                                                <td>Yhestin</td>
+                                                <td>Minor Injury</td>
+                                                <td>Bello</td>
+                                                <td>
+                                                    <button class="btn btn-outline-success">update</button>
+                                                    <button class="btn btn-outline-danger">delete</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container-fluid my-4">
                         <h4 class="ms-3">Health tips:</h4>
                     </div>
@@ -254,7 +301,7 @@
                     <p class="fw-bold my-4 ms-3 h5">
                         Logs
                     </p>
-                    <div role="region" aria-label="scrollable content" style="height: auto; overflow: scroll hidden;">
+                    <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>

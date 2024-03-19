@@ -32,112 +32,404 @@
                     </span>
                 </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active text-light">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-light">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-light">Request</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-light">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-light">Log out</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
     <!-- main content -->
-    <div class="container-fluid mt-3">
-        <div class="card py-3">
-            <h5 class="fw-bold my-4 ms-3">
-                Home
-            </h5>
-            <div class="card d-flex flex-row align-items-center ms-3" style="width: 70%";>
-                <span class="me-2">
-                    <img src="../images/icons/admin_icon.svg" alt="Icon" class="img-fluid" width="84">
-                </span>
-                <div class="container">
-                    <h3 class="fw-bold">
-                        Welcome, Yhestin Syth Jamili
-                    </h3>
-                    <p>
-                        Start your day with a glance at today's 
-                        appointments and recent updates. 
-                        Your patients are in good hands. Wishing you 
-                        a productive day of care and well-being.
-                    </p>
-                </div>
+    <div class="container my-4">
+        <div class="card text-start">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs text-nowrap flex-nowrap" style="overflow-x: auto; overflow-y: hidden;">
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Schedule</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark active">Appointments</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Accounts</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Requests</a></li> <!-- medicine should include to appointment data-->
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Doctors</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Doctor in and out</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Data</a></li>
+                    <li class="nav-items"><a href="" class="nav-link text-dark">Log out</a></li>
+                </ul>
             </div>
-            <div class="container-fluid mt-3">
-                <div class="row d-flex justify-content-evenly align-items-center g-3 mx-auto">
-                    <div class="col-6">
-                        <div class="card d-flex flex-row align-items-center w-75">
-                            <img src="../images/icons/user.svg" alt="icon" class="img-fluid" width="48">
-                            <span>
-                                <h3 class="m-0">
-                                    45
-                                </h3>
-                                <h5 class="m-0">
-                                    Today's appointments
-                                </h5>
-                            </span>
+            <!-- <div class="card-body">
+                <div class="card d-flex flex-row align-items-center my-4">
+                    <span class="me-2">
+                        <img src="../images/icons/admin_icon.svg" alt="Icon" class="img-fluid d-none d-md-block" width="78">
+                    </span>
+                    <div class="container">
+                        <h5 class="fw-bold mb-0">
+                            Welcome, Yhestin Syth Jamili
+                        </h5>
+                        <p class="mb-1">
+                            Start your day with a glance at today's 
+                            appointments and recent updates. 
+                            Your patients are in good hands. Wishing you 
+                            a productive day of care and well-being.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center gy-3 gx-5 mb-4">
+                    <div class="col-10 col-md-5">
+                        <div class="card bg-secondary py-3 text-center">
+                            <h5 class="m-0 ms-2 text-light"><b>Today's appointments: </b>34</h5>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card d-flex flex-row align-items-center w-75">
-                            <img src="../images/icons/user.svg" alt="icon" class="img-fluid" width="48">
-                            <span>
-                                <h3 class="m-0">
-                                    45
-                                </h3>
-                                <h5 class="m-0">
-                                    Total appointments
-                                </h5>
-                            </span>
+                    <div class="col-10 col-md-5">
+                        <div class="card bg-secondary py-3 text-center">
+                            <h5 class="m-0 ms-2 text-light"><b>Total appointments: </b>78</h5>
                         </div>
                     </div>
                 </div>
+                <h4 class="my-3">Active appointment status:</h4>
+                <div class="row justify-content-center g-3 mb-3">
+                    <div class="col-10 col-md-3">
+                        <div class="card py-3 bg-success">
+                            <h5 class="text-light mb-0 ms-3">Approved</h5>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3">
+                        <div class="card py-3 bg-primary">
+                            <h5 class="text-light mb-0 ms-3">Pending</h5>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3">
+                        <div class="card py-3 bg-warning">
+                            <h5 class="text-light mb-0 ms-3">Hold</h5>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3">
+                        <div class="card py-3 bg-danger">
+                            <h5 class="text-light mb-0 ms-3">Reject</h5>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="my-3">Logs:</h4>
+                <div class="card bg-info py-3 d-none d-md-block">
+                    <span class="d-flex align-items-center">
+                        <img src="../images/icons/info.svg" alt="icon" class="img-fluid mx-2">
+                        <h5 class="mb-0 text-light">Note: active appointments will fall to logs after 3 days of the desire date</h5>
+                    </span>
+                </div>
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="border-0 text-body-tertiary fw-normal">Name</th>
+                                    <th class="border-0 text-body-tertiary fw-normal">Date</th>
+                                    <th class="border-0 text-body-tertiary fw-normal">Time</th>
+                                    <th class="border-0 text-body-tertiary fw-normal">Doctor</th>
+                                    <th class="border-0 text-body-tertiary fw-normal">Status</th>
+                                    <th class="border-0 text-body-tertiary fw-normal">Control number</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>Yhestin</td>
+                                    <td>3/25/2024</td>
+                                    <td>9am</td>
+                                    <td>Bello</td>
+                                    <td class="bg-success">Approve</td>
+                                    <td>123543</td>
+                                </tr>
+                                <tr>
+                                    <td>Yhestin</td>
+                                    <td>3/25/2024</td>
+                                    <td>9am</td>
+                                    <td>Bello</td>
+                                    <td class="bg-success">Approve</td>
+                                    <td>123543</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
 
-                <div class="d-flex justify-content-evenly">
-                    <div class="w-75 mx-auto">
-                        <div class="card d-flex flex-row align-items-center w-75">
-                            <img src="../images/icons/user.svg" alt="icon" class="img-fluid" width="48">
-                            <span>
-                                <h3 class="m-0">
-                                    45
-                                </h3>
-                                <h5 class="m-0">
-                                    Today's appointments
-                                </h5>
-                            </span>
+
+
+
+            
+            <!-- <div class="card-body">
+                <h4 class="my-4 fw-bold text-dark-emphasis">Available Doctors:</h4>
+                <div class="row justify-content-start align-item-center g-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                <div class="card-header text-center fw-bold"><h4 class="m-0">In contract</h4></div>
+                                <div class="card-body">
+                                    <p class="card-text m-0"><b>ID: </b>000123</p>
+                                    <p class="card-text m-0"><b>Name: </b>Bello</p>
+                                    <p class="card-text m-0"><b>Schedule: </b>MTW</p>
+                                    <small class="m-0">9·4</small>
+                                </div>
+                                <div class="card-footer text-center text-body-secondary">Active</div>
+                            </a>
+                            <div class="modal fade" id="appointment-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title ms-2">Full details:</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row justify-content-start g-3">
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Name: </b>Shaun Murphy</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>ID number: </b>234543</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Address: </b>Davao City</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Phone number: </b>09123456789</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Birthdate: </b>12/2/1985</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Contract expire on: </b>7/14/2024</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Schedule: </b>Monday, Wednesday, Friday</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Time in: </b>8am</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Time out: </b>4pm</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>Expertise: </b>Dental</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p class="m-0"><b>From: </b>Davao Doctor's Hospital</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn btn-warning justify-content-center">
+                                                <img src="../images/icons/edit.svg" alt="icon" class="img-fluid">
+                                                <small class="text-dark m-0 p-0">Edit</small>
+                                            </button>
+                                            <button class="btn btn-danger justify-content-center">
+                                                <img src="../images/icons/delete.svg" alt="icon" class="img-fluid">
+                                                <small class="text-dark m-0 p-0">Delete</small>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-75 mx-auto">
-                        <div class="card d-flex flex-row align-items-center w-75">
-                            <img src="../images/icons/user.svg" alt="icon" class="img-fluid" width="48">
-                            <span>
-                                <h3 class="m-0">
-                                    45
-                                </h3>
-                                <h5 class="m-0">
-                                    Total appointments
-                                </h5>
-                            </span>
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                <div class="card-body">
+                                    <p class="card-text m-0"><b>Name:</b> Jamili, Yhestin Syth</p>
+                                    <p class="card-text m-0"><b>Appointment type:</b> Dental</p>
+                                    <p class="card-text m-0"><b>Doctor:</b> Danny</p>
+                                    <small class="m-0">9 · 10am</small>
+                                </div>
+                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                <div class="card-body">
+                                    <p class="card-text m-0"><b>Name:</b> Jamili, Yhestin Syth</p>
+                                    <p class="card-text m-0"><b>Appointment type:</b> Dental</p>
+                                    <p class="card-text m-0"><b>Doctor:</b> Danny</p>
+                                    <small class="m-0">9 · 10am</small>
+                                </div>
+                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                <div class="card-body">
+                                    <p class="card-text m-0"><b>Name:</b> Jamili, Yhestin Syth</p>
+                                    <p class="card-text m-0"><b>Appointment type:</b> Dental</p>
+                                    <p class="card-text m-0"><b>Doctor:</b> Danny</p>
+                                    <small class="m-0">9 · 10am</small>
+                                </div>
+                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                <div class="card-header text-center fw-bold"><h4 class="m-0">New doctor</h4></div>
+                                <div class="card-body text-center">
+                                    <img src="../images/icons/add.svg" alt="icon" class="img-fluid " width="96">
+                                </div>
+                                <div class="card-footer text-center text-body-secondary">Today</div>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+
+
+
+
+            <!-- <div class="card-body">
+                <form action="" class="me-3">
+                    <div class="row justify-content-center align-item-center g-3">
+                        <div class="col-10">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-10">
+                            <label class="form-label">ID</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-10">
+                            <label class="form-label">Time in</label>
+                            <input type="time" class="form-control" required>
+                        </div>
+                        <div class="col-10">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="col-10">
+                            <label class="form-label">Time out</label>
+                            <input type="time" class="form-control" required>
+                        </div>
+                        <div class="col-10 d-grid">
+                            <button class="btn btn-success px-4 mb-5 ms-2 ms-lg-0">Sign up</button>
+                        </div>
+                    </div>
+                </form>
+            </div> -->
+
+            <!-- <div class="card-body" style="height: 80vh;">
+                <div class="container-fluid d-flex justify-content-end mt-2">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="alert alert-warning text-center my-2 py-1 w-50 mx-auto" role="alert">
+                    Search for ID only
+                </div>
+                <div class="container-fluid my-4">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-center">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Birthdate</th>
+                                    <th>Contact</th>
+                                    <th>Role</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center table-group-divider">
+                                <tr>
+                                    <td>123123123</td>
+                                    <td>Yhestin Jamili</td>
+                                    <td>Male</td>
+                                    <td>11/27/2004</td>
+                                    <td>09777943791</td>
+                                    <td>Student</td>
+                                    <td>yhestin10@gmail.com</td>
+                                    <td>
+                                        <a type="btn" class="btn btn-success p-1" href="">Approve</a>
+                                        <a type="btn" class="btn btn-danger p-1" href="">Deny</a>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex justify-content-end">
+                    <nav class="navbar">
+                        <ul class="pagination">
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> -->
+
+            <div class="card-body" style="height: 80vh;">
+                <div class="container d-flex justify-content-between my-3 align-items-center">
+                    <h5 class="m-0 p-0">Appointments</h5>
+                    <div class="container d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filter
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-center">
+                                <tr>
+                                    <th class="border-0">Date</th>
+                                    <th class="border-0">Time</th>
+                                    <th class="border-0">Patient ID</th>
+                                    <th class="border-0">Patient Name</th>
+                                    <th class="border-0">Doctor ID</th>
+                                    <th class="border-0">Doctor Name</th>
+                                    <th class="border-0">Control Number</th>
+                                    <th class="border-0">Status</th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center table-group-divider">
+                                <tr>
+                                    <td>11/11/2024</td>
+                                    <td>9:00am</td>
+                                    <td>123123123</td>
+                                    <td>Yhestin Syth Jamili</td>
+                                    <td>123123123</td>
+                                    <td>Yhestin Syth Jamili</td>
+                                    <td>123123123</td>
+                                    <td>Pending</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 

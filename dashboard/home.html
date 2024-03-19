@@ -135,10 +135,10 @@
                         Home
                     </p>
                     <div class="card d-flex align-items-center flex-row mb-3 shadow-sm">
-                        <span class="py-3 ms-3">
+                        <span class="py-3 ms-3 d-none d-md-block">
                             <img src="../images/boy.svg" alt="icon" class="img-fluid mx-3">
                         </span>
-                        <span class="py-3">
+                        <span class="py-3 ms-2 ms-md-0">
                             <h4 class="user-name mt-2 mb-0">
                                 Hello, Yhestin Syth
                             </h4>
@@ -147,77 +147,171 @@
                             </p>
                         </span>
                     </div>
-                    <div class="row g-4 justify-content-center">
+                    <div class="row g-1 g-md-2 g-lg-4 justify-content-center">
                         <div class="col-12">
-                            <h4 class="text-start ms-3 mb-0">
+                            <h5 class="text-start ms-3 mb-0">
                                 Status:
-                            </h4>
+                            </h5>
                         </div>
-                        <div class="col-3">
+                        <div class="col-11 col-md-6 col-lg-3">
                             <div class="card py-4 text-center bg1 text-light h5 shadow">on going</div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-11 col-md-6 col-lg-3">
                             <div class="card py-4 text-center bg2 text-light h5 shadow">late</div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-11 col-md-6 col-lg-3">
                             <div class="card py-4 text-center bg3 text-light h5 shadow">absent</div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-11 col-md-6 col-lg-3">
                             <div class="card py-4 text-center bg4 text-light h5 shadow">done</div>
                         </div>
-                        <div class="col-4">
-                            <div class="card py-4 text-center text-secondary h5 shadow-sm">Available doctor</div>
+                        <div class="col-12 col-md-10 col-lg-4">
+                            <div class="card py-4 text-center bg-info h5 shadow-sm">Available doctor</div>
                         </div>
-                        <div class="col-4">
-                            <div class="card py-4 text-center text-secondary h5 shadow-sm">Available staff</div>
+                        <div class="col-12 col-md-10 col-lg-4">
+                            <div class="card py-4 text-center bg-info h5 shadow-sm">Available staff</div>
                         </div>
-                        <div class="col-4">
-                            <div class="card py-4 text-center text-secondary h5 shadow-sm">total appointments</div>
+                        <div class="col-12 col-md-10 col-lg-4">
+                            <div class="card py-4 text-center bg-info h5 shadow-sm">total appointments</div>
                         </div>
                     </div>
+                    <h5 class="text-start ms-3 mb-4 mt-3">
+                        Upcoming appointment:
+                    </h5>
                     <div class="container-fluid">
-                        <div class="card">
-                            <div class="card-header p-2 ps-1">
-                                <h5 class="m-0 fw-bold">Manage schedule:</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th class="border-0 fw-bold">Date</th>
-                                                <th class="border-0 fw-bold">Time</th>
-                                                <th class="border-0 fw-bold">Name</th>
-                                                <th class="border-0 fw-bold">Reason</th>
-                                                <th class="border-0 fw-bold">Doctor</th>
-                                                <th class="border-0 fw-bold">Edit</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="table-group-divider">
-                                            <tr>
-                                                <td>11/20/2024</td>
-                                                <td>10:00am</td>
-                                                <td>Rose</td>
-                                                <td>Oral</td>
-                                                <td>Johnny</td>
-                                                <td>
-                                                    <button class="btn btn-outline-success">update</button>
-                                                    <button class="btn btn-outline-danger">delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>11/20/2024</td>
-                                                <td>10:00am</td>
-                                                <td>Yhestin</td>
-                                                <td>Minor Injury</td>
-                                                <td>Bello</td>
-                                                <td>
-                                                    <button class="btn btn-outline-success">update</button>
-                                                    <button class="btn btn-outline-danger">delete</button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="card shadow-none">
+                            <div class="card-body bg-secondary">
+                                <div class="row justify-content-center justify-content-md-start align-items-center g-3">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                                <div class="card-body">
+                                                    <p class="card-text m-0"><b>Name:</b> Jamili, Yhestin Syth</p>
+                                                    <p class="card-text m-0"><b>Appointment type:</b> Dental</p>
+                                                    <p class="card-text m-0"><b>Doctor:</b> Danny</p>
+                                                    <small class="m-0">9 · 10am</small>
+                                                    <!-- approve date -->
+                                                </div>
+                                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                                            </a>
+                                            <div class="modal fade" id="appointment-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title ms-2">Full details:</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="container-fluid">
+                                                                <div class="row justify-content-start g-3">
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Name: </b>Yhestin Jamili</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>ID number: </b>234543</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Reason: </b>Dental</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Appointment schedule: </b>3-7-2024</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Apointment time: </b>9am</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Doctor: </b>Bello</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Doctor's ID: </b>234123</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Status: </b>For approval</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Control number: </b>123323</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Appointment file: </b>2-27-2024</p>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <p class="m-0"><b>Appointment time: </b>3pm</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                            <button class="btn btn-warning justify-content-center">
+                                                                <img src="../images/icons/edit.svg" alt="icon" class="img-fluid">
+                                                                <small class="text-dark m-0 p-0">Edit</small>
+                                                            </button>
+                                                            <button class="btn btn-danger justify-content-center">
+                                                                <img src="../images/icons/delete.svg" alt="icon" class="img-fluid">
+                                                                <small class="text-dark m-0 p-0">Delete</small>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                                <div class="card-body">
+                                                    <p class="card-text m-0"><b>Name:</b> Cruz, Eli</p>
+                                                    <p class="card-text m-0"><b>Appointment type:</b> Check up</p>
+                                                    <p class="card-text m-0"><b>Doctor:</b> Pedro</p>
+                                                    <small class="m-0">9 · 10am</small>
+                                                    <!-- approve date -->
+                                                </div>
+                                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                                <div class="card-body">
+                                                    <p class="card-text m-0"><b>Name:</b> Gonzales, Mickey</p>
+                                                    <p class="card-text m-0"><b>Appointment type:</b> Blood Pressure</p>
+                                                    <p class="card-text m-0"><b>Doctor:</b> Danny</p>
+                                                    <small class="m-0">9 · 10am</small>
+                                                    <!-- approve date -->
+                                                </div>
+                                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                                <div class="card-header text-center fw-bold"><h4 class="m-0">Details at a Glance</h4></div>
+                                                <div class="card-body">
+                                                    <p class="card-text m-0"><b>Name:</b> Tan, Josh</p>
+                                                    <p class="card-text m-0"><b>Appointment type:</b> Dental</p>
+                                                    <p class="card-text m-0"><b>Doctor:</b> Bello</p>
+                                                    <small class="m-0">9 · 10am</small>
+                                                    <!-- approve date -->
+                                                </div>
+                                                <div class="card-footer text-center text-body-secondary">2 days remaining</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <a href="" role="button" data-bs-toggle="modal" data-bs-target="#appointment-1" class="card-block stretched-link text-decoration-none text-dark">
+                                                <div class="card-header text-center fw-bold"><h4 class="m-0">add appointment</h4></div>
+                                                <div class="card-body text-center">
+                                                    <img src="../images/icons/add.svg" alt="icon" class="img-fluid " width="96">
+                                                </div>
+                                                <div class="card-footer text-center text-body-secondary">Today</div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
